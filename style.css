@@ -1,0 +1,475 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.textR{
+    text-align: right;
+}
+.textL{
+    text-align: left;
+}
+.textC{
+    text-align: center;
+}
+.fix-width{
+    max-width: 1024px;
+    margin: auto;
+    height: inherit;
+}
+img{
+    max-width: 100%;
+    
+}
+/* Start */
+/* ////////////////////////////////////// */
+header{
+    background: rgb(0, 0, 0);
+    height: 70px;
+    width: 100%;
+}
+header .fix-width .logo .im{
+    width: 30%;
+    height: 100%;
+}
+header .logo{
+    width: 30%;
+    height: inherit;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* Menu */
+header .menu{
+    width: 70%;
+    height: inherit;
+}
+header .menu ul{
+    cursor: default;
+    height: inherit;
+}
+header .menu ul li{
+    height: inherit;
+
+}
+header .menu ul li span{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+header .menu ul li a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 25px;
+    position: relative;
+    margin-top: 20px;
+    line-height: 100%;
+}
+header .menu ul li a::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.767);
+    opacity: 0;
+    margin-bottom: -4px;
+}
+header .menu ul li a:hover:after{
+   opacity: 1;
+}
+/* Dropdown */
+header .menu ul li{
+    position: relative;
+}
+header .menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: orange;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    border-top: 4px solid #fff;
+}
+header .menu ul li ul li{
+    display: block;
+    background: rgb(0, 0, 0);
+    width: 200px;
+
+}
+header .menu ul li ul li a{
+    position: relative;
+}
+header .menu ul li ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    
+}
+header .menu ul li ul li:hover a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    
+}
+header .menu ul li ul li:hover a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    
+}
+
+header .menu ul li ul li:hover{
+    background: #fff;
+}
+header .menu ul li ul li:hover > a{
+    color: black;
+}
+header .menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    height: 60px;
+}
+header .menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+/* hero */
+/* /////////////////////////// */
+.hero{
+    background: url(https://i.ibb.co/SX5Cxw9/a0c6042d4612d7adf44692fffac7e082.jpg) no-repeat top center;
+    background-size: cover;
+    width: 100%;
+}
+.hero .content{
+    padding: 200px 0;
+}
+.hero h1{
+    font-size: 40px;
+    color: #223127;
+    font-weight: 900;
+    padding: 10px 0;
+}
+.hero h4{
+    font-size: 20px;
+}
+.hero a.b1{
+    color: #fff;
+    display: inline-block;
+    background: #000;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 1px solid rgb(104, 104, 104);
+    transition: .4s;
+}
+.hero a.b2{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+.hero a.b1:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+.hero a.b2:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+/* About */
+.about{
+    background: #87a471;
+}
+.about h1{
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 3px 2px 5px ;
+    padding: 20px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+.about h1::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+}
+.about .content{
+    padding: 20px  0 40px 0;
+}
+.about .txt{
+    width: 45%;
+    color: #fff;
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 50px;
+}
+.about .pic{
+    width: 45%;
+
+}
+.about .pic img{
+    width: 70%;
+}
+/* What */
+/* /////////////////////// */
+.what{
+    background: #606a64;
+    color: #fff;
+    width: 100%;
+    padding: 40px  0;
+}
+.what h1{
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 3px 2px 5px ;
+    padding: 20px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+.what h1::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+}
+.what h2{
+    font-size: 29px;
+    padding: 10px 0;
+}
+.what p{
+    font-size: 15px;
+    padding: 10px 0;
+    line-height: 25px;
+}
+.sec-name{
+    padding: 20px 0;
+}
+.what .content{
+    margin: 30px 0;
+}
+.what .content .item{
+    width: 30%;
+    color: #45617d;
+    background: #fff;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.what .content .item:nth-child(2){
+    margin-left: 4.6%;
+}
+.what .content .item:nth-child(3){
+    margin-left: 4.6%;
+}
+.what .content .item .d1{
+    width: 20%;
+}
+.what .content .item .d2{
+    width: 70%;
+}
+.what .content .item .d2 h3{
+    font-size: 26px;
+}
+/* worrk */
+/* /////////////////////////////////////////////////////////////// */
+.work{
+    background: #87a471;
+}
+.work .work-name{
+    padding: 40px 0;
+    color: #fff;
+}
+.work .work-name h1{ 
+    padding: 20px  0;
+}
+/* list 1 */
+.work .list1{
+    padding: 20px 0;
+}
+.work .list1 .item{
+    border: 2px solid #ddd;
+    width: 48%;
+}
+.work .list1 .item img{
+    width: 100%;
+}
+.work .list1 .item p{
+    font-weight: 600;
+    color: #fff;
+    margin:15px;
+}
+.work .list1 .item .pp{
+    font-weight: 600;
+    color: #4b6587;
+    margin-bottom: -7px;
+}
+/* list 2 */
+.work .list2{
+    padding: 40px 0;
+}
+.work .list2 .item{
+    width: 23%;
+    padding: 30px 0;
+}
+.work .list2 .item:nth-child(2){
+    margin-left: 2.66%;
+}
+.work .list2 .item:nth-child(3){
+    margin-left: 2.66%;
+}
+.work .list2 .item:nth-child(4){
+    margin-left: 2.66%;
+}
+.work .list2 .item img{
+    width: 100%;
+}
+/* Team */
+/* /////////////////////////////// */
+.team{
+    background: #5b9776;
+}
+.team .name{}
+.team .name h1{
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 3px 2px 5px ;
+    padding: 20px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+.team .name h1::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 70%;
+    bottom: 0;
+    left: 15%;
+    background: rgb(255, 255, 255);
+}
+.team .content{
+    padding-bottom: 40px;
+}
+.team .content .item{
+    width: 30%;
+}
+.team .content .item:nth-child(2){
+    margin-left: 5%;
+}
+.team .content .item:nth-child(3){
+    margin-left: 5%;
+}
+.team .content .ii{
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+    padding: 10px 0;
+}
+
+.team .content .ii i{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+    padding: 10px 0;
+    transition: .2s;
+}
+.team .content .ii i:hover{
+    color: rgb(92, 92, 92);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+    padding: 10px 0;
+}
+/* foot */
+/* //////////////////////////////////////// */
+.foot{
+    padding: 40px 0;
+    background: #606a64;
+    color: #fff;
+}
+.foot h1{
+    font-size: 40px;
+    padding: 20px  0;
+}
+.foot a{
+    color: #fff;
+    background: #00bc9c;
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.foot a:hover{
+    color: #fff;
+    background: #2a2b2b;
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* Foooter */
+/* ////////////////////////////////// */
+.footer{
+    background: #000;
+    color: #fff;
+    padding: 25px 0;
+    font-weight: 700;
+}
